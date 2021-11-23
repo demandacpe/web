@@ -4,7 +4,7 @@ function fromDrive(link) {
   originalUrl = originalUrl.replace("/view?usp=sharing", "");
   const [, id] = originalUrl.split("file/d/");
 
-  const baseUrl = "https://drive.google.com/uc?export=view&id=";
+  const baseUrl = "https://drive.google.com/uc?export=download&id=";
   console.log(`${id}`);
   return `${baseUrl}${id}`;
 }
