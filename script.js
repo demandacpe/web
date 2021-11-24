@@ -118,9 +118,13 @@ function generateImage(url) {
 
 function generateAudio(url) {
   const audio = document.createElement("audio");
-  audio.src = url;
   audio.className = "audio";
   audio.setAttribute("controls", "true");
+
+  const source = document.createElement("source");
+  source.src = url;
+
+  audio.appendChild(source);
   return audio;
 }
 

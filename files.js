@@ -18,15 +18,6 @@ var files = [
     name: "Video 01",
     id: "1",
   },
-
-  {
-    type: "audio",
-    url: fromDrive(
-      "https://drive.google.com/file/d/1FoT6vWlthZ5En4VVJTCefAesS8HvgsvJ/view?usp=sharing"
-    ),
-    name: "2016, tortura com agressões",
-    id: "8",
-  },
   {
     type: "audio",
     url: fromDrive(
@@ -107,19 +98,16 @@ var files = [
     name: "Áudio 11.02",
     id: "18",
   },
+  // Arquivos muito longos para serem carregados do Google Drive
   {
     type: "audio",
-    url: fromDrive(
-      "https://drive.google.com/file/d/12dqg_uAiVb5ApKSRfWuQwItgipe2HVF9/view?usp=sharing"
-    ),
+    url: "./files/Áudio grande amplificado.mp3",
     name: "Áudio grande amplificado",
     id: "19",
   },
   {
     type: "audio",
-    url: fromDrive(
-      "https://drive.google.com/file/d/1fMwdY-tYmZQo3-2CznrIEYC9gQThxZ1Z/view?usp=sharing"
-    ),
+    url: "./files/2016, tortura com agressões físicas, psicológicas e ameaças.m4a",
     name: "Confissão, ameaças, agressões, rejeição filha, apropriação indébita, coerção e manipulação mental",
     id: "20",
   },
