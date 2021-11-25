@@ -101,13 +101,13 @@ var files = [
   // Arquivos muito longos para serem carregados do Google Drive
   {
     type: "audio",
-    url: "./files/Áudio grande amplificado.mp3",
+    url: "https://www.dropbox.com/s/3pdutcttlvz3ucw/%C3%81udio%20grande%20amplificado.mp3?raw=1",
     name: "Áudio grande amplificado",
     id: "19",
   },
   {
     type: "audio",
-    url: "./files/2016, tortura com agressões físicas, psicológicas e ameaças.m4a",
+    url: "https://www.dropbox.com/s/pbnnr7p9cc4d0jq/2016%2C%20tortura%20com%20agress%C3%B5es%20f%C3%ADsicas%2C%20psicol%C3%B3gicas%20e%20amea%C3%A7as.m4a?raw=1",
     name: "Confissão, ameaças, agressões, rejeição filha, apropriação indébita, coerção e manipulação mental",
     id: "20",
   },
