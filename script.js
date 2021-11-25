@@ -7,11 +7,6 @@ function initPage() {
   generateItems();
 }
 
-function pauseVideos() {
-  const videos = Array.from(document.getElementsByTagName("video"));
-  videos.forEach((video) => video.pause());
-}
-
 function initModal() {
   const modal = window.document.getElementById("my-modal");
   const modalContent = window.document.getElementById("modal-content");
@@ -24,14 +19,35 @@ function closeModal(e) {
   const modal = window.document.getElementById("my-modal");
   modal.classList.add("hidden");
 
-  pauseVideos();
+  const modalContent = document.getElementById("in-modal-content");
+  modalContent.id = "";
+  const originalParentId = modalContent.getAttribute("originalParent");
+  console.log(originalParentId);
+  const originalParent = document.getElementById(originalParentId);
+  originalParent.prepend(modalContent);
+
+  pauseAllMedia();
 }
 
 function openModal() {
   const modal = window.document.getElementById("my-modal");
   modal.classList.remove("hidden");
 
+  pauseAllMedia();
+}
+
+function pauseAllMedia() {
   pauseVideos();
+  pauseAudios();
+}
+
+function pauseVideos() {
+  const videos = Array.from(document.getElementsByTagName("video"));
+  videos.forEach((video) => video.pause());
+}
+function pauseAudios() {
+  const audios = Array.from(document.getElementsByTagName("audio"));
+  audios.forEach((video) => video.pause());
 }
 
 function showInModal(e) {
@@ -41,10 +57,12 @@ function showInModal(e) {
   modalContent.innerHTML = "";
 
   const originalTarget = e.target;
-  const targetCopy = originalTarget.cloneNode(true);
-  targetCopy.id = "in-modal-content";
+  originalTarget.id = "in-modal-content";
 
-  modalContent.appendChild(targetCopy);
+  const originalParent = originalTarget.parentNode;
+  originalTarget.setAttribute("originalParent", originalParent.id);
+
+  modalContent.appendChild(originalTarget);
   openModal();
 }
 
@@ -52,6 +70,7 @@ function generateItems() {
   for (file of files) {
     const card = document.createElement("div");
     card.classList.add("card");
+    card.id = file.url;
 
     // header
     content = generateContent(file);
@@ -119,7 +138,7 @@ function generateImage(url) {
 function generateAudio(url) {
   const audio = document.createElement("audio");
   audio.className = "audio";
-  audio.setAttribute("controls", "true");
+  audio.setAttribute("controls", "false");
 
   const source = document.createElement("source");
   source.src = url;
