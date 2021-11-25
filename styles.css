@@ -24,8 +24,27 @@
   height: 80vh;
 }
 
+.modal-content .audio {
+  min-width: 80%;
+}
+
 .page__title {
   margin-top: 30px;
+}
+
+.info-container {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.info-container p {
+  margin: 0;
+  padding: 0;
+}
+
+.info-color {
+  background-color: beige;
+  padding: 10px;
 }
 
 .accordion {
@@ -49,9 +68,14 @@
   max-width: 100%;
   height: 70%;
 
+  background-color: beige;
   cursor: pointer;
   display: flex;
   justify-content: center;
+}
+
+.modal-content .img-card-top {
+  background-color: white;
 }
 
 .img-card-top > img,

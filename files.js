@@ -27,7 +27,7 @@ var files = [
     id: "9",
   },
   {
-    type: "vid",
+    type: "audio",
     url: fromDrive(
       "https://drive.google.com/file/d/1gO8UeUrXbVo8LT-woLWyawReQ-DVJPu2/view?usp=sharing"
     ),
@@ -35,7 +35,7 @@ var files = [
     id: "10",
   },
   {
-    type: "vid",
+    type: "audio",
     url: fromDrive(
       "https://drive.google.com/file/d/1SfWP50WLmFmznE98hmj3ESNK0yYIMvGq/view?usp=sharing"
     ),
@@ -51,7 +51,7 @@ var files = [
     id: "12",
   },
   {
-    type: "vid",
+    type: "audio",
     url: fromDrive(
       "https://drive.google.com/file/d/1XTgH1uuvfL8ZO8y60uR7yhCsJ6K2fmFo/view?usp=sharing"
     ),
@@ -59,7 +59,7 @@ var files = [
     id: "13",
   },
   {
-    type: "vid",
+    type: "audio",
     url: fromDrive(
       "https://drive.google.com/file/d/1_QOt9FyHEXXI_j8AGAdoHzIOjw-3KbxR/view?usp=sharing"
     ),
@@ -67,7 +67,7 @@ var files = [
     id: "14",
   },
   {
-    type: "vid",
+    type: "audio",
     url: fromDrive(
       "https://drive.google.com/file/d/1a_IvF43a0neTxdW-6fgxrLSJjsmH6SI_/view?usp=sharing"
     ),
@@ -75,7 +75,7 @@ var files = [
     id: "15",
   },
   {
-    type: "vid",
+    type: "audio",
     url: fromDrive(
       "https://drive.google.com/file/d/1iIecXdjVY02QTYMKOB6m-ZYyI47Vo2kI/view?usp=sharing"
     ),
@@ -83,7 +83,7 @@ var files = [
     id: "16",
   },
   {
-    type: "vid",
+    type: "audio",
     url: fromDrive(
       "https://drive.google.com/file/d/1NpBWqtIza8GuX5QvGBlotKNQ_krSVKvk/view?usp=sharing"
     ),
@@ -91,7 +91,7 @@ var files = [
     id: "17",
   },
   {
-    type: "vid",
+    type: "audio",
     url: fromDrive(
       "https://drive.google.com/file/d/1C_pjTJHCJ7XUdMmgivjRlWsP_NE4hhuo/view?usp=sharing"
     ),
