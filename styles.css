@@ -59,7 +59,7 @@
 
 .card {
   width: 16rem;
-  height: 20rem;
+  min-height: 23rem;
   overflow: hidden;
   margin: 20px;
 }

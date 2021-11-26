@@ -22,7 +22,6 @@ function closeModal(e) {
   const modalContent = document.getElementById("in-modal-content");
   modalContent.id = "";
   const originalParentId = modalContent.getAttribute("originalParent");
-  console.log(originalParentId);
   const originalParent = document.getElementById(originalParentId);
   originalParent.prepend(modalContent);
 
